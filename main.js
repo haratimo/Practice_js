@@ -1,4 +1,11 @@
-import * as jsPsychModule from "jspsych/jspsych.js";
+var timeline = [];
+
+initJsPsych({
+  timeline: timeline,
+  on_finish: function() {
+    jsPsych.data.displayData();
+  }
+});
 
 // Define stimulus array
 let stimuli = [];
