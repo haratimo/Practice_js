@@ -1,4 +1,4 @@
-import * as jsPsychModule from "../jsPsych/jspsych.js";
+import * as jsPsychModule from "jspsych/jspsych.js";
 
 // Define stimulus array
 let stimuli = [];
