@@ -62,5 +62,12 @@ timeline.unshift(welcomeTrial);
 
 jsPsych.init({
   timeline: timeline,
-  show_progress_bar: true
+  show_progress_bar: true,
+  plugins: {
+    fullscreen: {
+      showtext: true,
+      buttontext: "Go Fullscreen",
+      exittext: "Exit Fullscreen"
+    }
+  }
 });
