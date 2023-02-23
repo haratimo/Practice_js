@@ -1,12 +1,3 @@
-var timeline = [];
-
-initJsPsych({
-  timeline: timeline,
-  on_finish: function() {
-    jsPsych.data.displayData();
-  }
-});
-
 // Define stimulus array
 let stimuli = [];
 
@@ -52,4 +43,7 @@ const timeline = [welcomeTrial, maxDiffTrial];
 // Run experiment
 jsPsychModule.init({
   timeline: timeline,
+  on_finish: function() {
+    jsPsychModule.data.displayData();
+  }
 });
